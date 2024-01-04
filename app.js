@@ -17,6 +17,8 @@ const start = async (url) => {
     } catch (error) {
         console.log('not done');
     }
+
+    // This is the change
 }
 
 start(process.env.MONGO_URI)
