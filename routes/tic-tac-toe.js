@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const {checkWin} = require('../controllers/gamePlay')
+const {init, updateArray} = require('../controllers/gamePlay')
 
-router.post('/', checkWin)
-//This
+router.post('/', init)
+router.patch('/:id', updateArray)
 
 module.exports = router
